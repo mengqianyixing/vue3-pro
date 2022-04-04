@@ -18,5 +18,6 @@
     }
 
     //test main
+    //text main2
 </script>
 <style scoped></style>
