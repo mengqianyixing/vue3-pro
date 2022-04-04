@@ -16,7 +16,5 @@
     const handleInput = (e) => {
         emits('update:input', e.target.value)
     }
-
-    //test main
 </script>
 <style scoped></style>
