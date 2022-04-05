@@ -1,4 +1,3 @@
-
 <template>
     <div class="flex flex-col justify-center items-center">
         <input v-model="value1" type="input" @input="handleInput" />
