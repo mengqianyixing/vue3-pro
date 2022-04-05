@@ -5,8 +5,8 @@
 </template>
 
 <script setup>
-    import { ref, watch, watchEffect } from 'vue'
-    const value1 = ref('')
+    import { $ref } from 'vue'
+    const value1 = $ref('')
     const props = defineProps({
         input: {
             type: String,
