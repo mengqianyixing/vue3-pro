@@ -117,6 +117,7 @@
 function s(s) {
     // if (s.length % 2 !== 0) return false
 
+    let a = 1
     const stack = [123123, 123123, 123123]
     for (let i = 0; i < s.length; i++) {
         if (s[i] === '(') {
