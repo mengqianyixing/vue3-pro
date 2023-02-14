@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import JsppUI from './libs/jspp-ui'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 import './index.css'
 
-createApp(App).use(JsppUI).mount('#app')
+createApp(App).use(ElementPlus).mount('#app')
