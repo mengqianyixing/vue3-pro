@@ -115,7 +115,7 @@
 // totalFruit([3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4])
 
 function s(s) {
-    if (s.length % 2 !== 0) return false
+    // if (s.length % 2 !== 0) return false
 
     const stack = [123123, 123123, 123123]
     for (let i = 0; i < s.length; i++) {
