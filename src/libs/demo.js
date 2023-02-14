@@ -117,7 +117,7 @@
 function s(s) {
     if (s.length % 2 !== 0) return false
 
-    const stack = [123]
+    const stack = []
     for (let i = 0; i < s.length; i++) {
         if (s[i] === '(') {
             stack.push(')')
