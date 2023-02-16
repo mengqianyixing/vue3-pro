@@ -16,7 +16,8 @@
         <!--            </template>-->
         <!--        </el-scrollbar>-->
         <!--        {{ CTime }}-->
-        <!--        <h1 data-text="It's loading…">It's loading…</h1>-->
+        <h1 data-text="It's loading…">It's loading…</h1>
+        <el-button>click</el-button>
     </div>
 </template>
 
@@ -24,7 +25,6 @@
     import { computed, onMounted, ref } from 'vue'
     import { useToggle } from '@vueuse/core'
     import moment from 'moment'
-    import { ChatGPTAPI } from 'chatgpt'
 
     const time = ref(0)
     const CTime = computed(() => moment(time.value).format('hh:mm:ss'))
@@ -36,74 +36,6 @@
     })
     const [show, toggleShow] = useToggle(true)
     const showTable = ref(false)
-    const commentList = [
-        {
-            id: 11,
-            user: {
-                account: { id: 15 },
-                nickname: 'sl',
-                avatar: 'image/avatar/u15/20200227-151442.png',
-                type: 'admin',
-                job: '火柴人',
-                signature: '我的个性签名很个性',
-                background: null,
-                createTime: '2021-01-11T17:25:44.000+0000',
-                enableUploadHdr: true,
-                enableOldStation: true,
-                enableNewStation: true,
-                enable48Station: true,
-                enableManageHdr: true,
-                enableUploadShow: true,
-                enableManageShow: true,
-                enableManageCollege: true,
-                enableManageMaterial: true,
-                enableUploadGaia48: true,
-                superAdmin: true,
-            },
-            frameWorksId: 'f9ca89de-d365-43b6-9dc9-409a60f5f192',
-            content: '123123🥶',
-            originComment: null,
-            timeNode: 0,
-            likes: 0,
-            likesState: false,
-            views: 0,
-            createTime: '2022-04-07T09:39:46.000+0000',
-            title: null,
-        },
-        {
-            id: 10,
-            user: {
-                account: { id: 15 },
-                nickname: 'sl',
-                avatar: 'image/avatar/u15/20200227-151442.png',
-                type: 'admin',
-                job: '火柴人',
-                signature: '我的个性签名很个性',
-                background: null,
-                createTime: '2021-01-11T17:25:44.000+0000',
-                enableUploadHdr: true,
-                enableOldStation: true,
-                enableNewStation: true,
-                enable48Station: true,
-                enableManageHdr: true,
-                enableUploadShow: true,
-                enableManageShow: true,
-                enableManageCollege: true,
-                enableManageMaterial: true,
-                enableUploadGaia48: true,
-                superAdmin: true,
-            },
-            frameWorksId: 'f9ca89de-d365-43b6-9dc9-409a60f5f192',
-            content: '测试123123🤭',
-            originComment: null,
-            timeNode: 0,
-            likes: 0,
-            likesState: false,
-            views: 0,
-            createTime: '2022-04-07T09:32:53.000+0000',
-            title: null,
-        },
-    ]
 
     const toggle = ref(false)
 
@@ -128,7 +60,6 @@
 </script>
 <style scoped>
     body {
-        background: #;
         font-family: sans-serif;
     }
     h1 {
