@@ -15,7 +15,7 @@ pipeline {
 
     stage('End') {
       steps {
-        dingtalk 'build-bot001'
+        dingtalk(robot: '4b284623-f31f-4901-98b0-dfeaed6b2034', type: 'TEXT')
       }
     }
 
