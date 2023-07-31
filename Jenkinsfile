@@ -1,4 +1,5 @@
 pipeline {
+  def response = httpRequest "http://v.juhe.cn/toutiao/index?key=${param1}"
   agent {
     docker {
       image 'node:lts-bullseye-slim'
